@@ -8,7 +8,7 @@ import AppRouter from './routers/AppRouter';
 import { Provider } from 'react-redux';
 import configureStore from './redux/store/configureStore';
 import { addExpense } from './redux/actions/expActionGenerators';
-import { setTextFilter } from './redux/actions/filActionGenerators';
+//import { setTextFilter } from './redux/actions/filActionGenerators';
 // import filteredExpenses from "./redux/selectors/filteredExpenses";
 
 const store = configureStore();
@@ -29,7 +29,3 @@ const jsx = (
 );
 
 ReactDOM.render(jsx, document.getElementById('root'));
-
-if (module.hot) {
-	module.hot.accept();
-}

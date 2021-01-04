@@ -22,11 +22,10 @@ export const removeExpense = ({ id } = {}) => ({
 	id,
 });
 //EDIT_EXPENSE
-export const editExpense = (id, otherExpense) => {
-	console.log(id, otherExpense);
+export const editExpense = (id, updates) => {
 	return {
 		type: 'EDIT_EXPENSE',
 		id,
-		otherExpense,
+		updates,
 	};
 };

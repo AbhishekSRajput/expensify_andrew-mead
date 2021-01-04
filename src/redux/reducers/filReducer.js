@@ -1,4 +1,4 @@
-import moment, { months } from 'moment';
+import moment from 'moment';
 
 //FILTER REDUCER
 //default state for filters
@@ -9,7 +9,7 @@ const filterDefaultState = {
 	endDate: moment().endOf('month'),
 };
 
-export default (state = filterDefaultState, action) => {
+const fillReducer = (state = filterDefaultState, action) => {
 	switch (action.type) {
 		case 'SET_TEXT_FILTER':
 			return {
@@ -40,3 +40,5 @@ export default (state = filterDefaultState, action) => {
 			return state;
 	}
 };
+
+export default fillReducer;

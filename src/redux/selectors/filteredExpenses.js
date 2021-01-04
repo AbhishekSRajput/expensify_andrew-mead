@@ -8,7 +8,7 @@ export default (expenses, { text, sortBy, startDate, endDate }) => {
 				? startDate.isSameOrBefore(createdMoment, 'day')
 				: true;
 			const endDateMatch = endDate
-				? endDate.isSameOrBefore(createdMoment, 'day')
+				? endDate.isSameOrAfter(createdMoment, 'day')
 				: true;
 			const textMatch = expense.description
 				.toLowerCase()

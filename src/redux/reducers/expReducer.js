@@ -1,6 +1,6 @@
 //EXPENSE REDUCER
 const expenseReducerDefaultState = [];
-export default (state = expenseReducerDefaultState, action) => {
+const expReducer = (state = expenseReducerDefaultState, action) => {
 	switch (action.type) {
 		case 'ADD_EXPENSE':
 			// return state.concat(action.expense);
@@ -11,7 +11,7 @@ export default (state = expenseReducerDefaultState, action) => {
 		case 'EDIT_EXPENSE':
 			return state.map((expense) => {
 				if (expense.id === action.id) {
-					return { ...expense, ...action.otherExpense };
+					return { ...expense, ...action.updates };
 				} else {
 					return expense;
 				}
@@ -20,3 +20,5 @@ export default (state = expenseReducerDefaultState, action) => {
 			return state;
 	}
 };
+
+export default expReducer;
