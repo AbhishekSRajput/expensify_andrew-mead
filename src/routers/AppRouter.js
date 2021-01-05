@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 
 import ExpenseDashboardPage from '../pages/ExpenseDashboardPage';
 import AddExpensePage from '../pages/AddExpensePage';
@@ -9,7 +9,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 import Header from '../components/Header';
 
 const AppRouter = () => (
-	<BrowserRouter>
+	<HashRouter>
 		<div>
 			<Header />
 			<Switch>
@@ -20,7 +20,7 @@ const AppRouter = () => (
 				<Route component={NotFoundPage} />
 			</Switch>
 		</div>
-	</BrowserRouter>
+	</HashRouter>
 );
 
 export default AppRouter;

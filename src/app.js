@@ -22,6 +22,7 @@ store.dispatch(
 // console.log(state);
 // const VisibleExpenses = filteredExpenses(state.addExpense, state.filters);
 // console.log(VisibleExpenses);
+
 const jsx = (
 	<Provider store={store}>
 		<AppRouter />
