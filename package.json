@@ -7,7 +7,9 @@
 		"dev": "webpack-dev-server",
 		"build": "webpack",
 		"build-prod": "webpack",
-		"test": "jest"
+		"test": "jest",
+		"start": "node server/server.js",
+		"heroku-postbuild": "npm run build"
 	},
 	"keywords": [],
 	"author": "",
@@ -50,6 +52,7 @@
 	"devDependencies": {
 		"@babel/plugin-proposal-class-properties": "^7.12.1",
 		"babel-plugin-syntax-class-properties": "^6.13.0",
-		"babel-plugin-transform-class-properties": "^6.24.1"
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"express": "^4.17.1"
 	}
 }

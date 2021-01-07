@@ -9,7 +9,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 import Header from '../components/Header';
 
 const AppRouter = () => (
-	<HashRouter>
+	<BrowserRouter>
 		<div>
 			<Header />
 			<Switch>
@@ -20,7 +20,7 @@ const AppRouter = () => (
 				<Route component={NotFoundPage} />
 			</Switch>
 		</div>
-	</HashRouter>
+	</BrowserRouter>
 );
 
 export default AppRouter;
