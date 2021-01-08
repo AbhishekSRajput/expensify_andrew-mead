@@ -19,7 +19,7 @@ const expenses = [
 		id: '3',
 		description: 'big house',
 		note: 'bought new big house -y',
-		amount: 4600000000000000000000,
+		amount: 6000,
 		createdAt: moment(0).subtract(4, 'days').valueOf(),
 	},
 ];
